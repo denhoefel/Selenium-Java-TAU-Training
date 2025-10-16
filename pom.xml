@@ -17,12 +17,7 @@
 
 
     <dependencies>
-        <!-- Selenium Java - Biblioteca principal do Selenium WebDriver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.16.1</version>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
@@ -45,6 +40,13 @@
             <version>4.16.1</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.25.0</version>
+        </dependency>
+
         <!-- Selenium API - API core do Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -60,11 +62,7 @@
         </dependency>
 
         <!-- Selenium Support - Utilitários e funcionalidades adicionais -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.25.0</version>
-        </dependency>
+
 
 
 
