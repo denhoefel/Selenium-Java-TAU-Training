@@ -13,7 +13,7 @@ public class BaseTests {
 
     @BeforeClass
     public void setUp () {
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe"); //informing the webdriver and location
+       // System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe"); //informing the webdriver and location
         driver = new ChromeDriver(); //instantiate ChromeDriver
         driver.get("https://the-internet.herokuapp.com//"); //access to the page you want to test
         driver.manage().window().maximize(); //maximize the window

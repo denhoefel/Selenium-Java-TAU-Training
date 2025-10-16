@@ -1,7 +1,6 @@
 package pages;
 
 
-import com.sun.tools.xjc.reader.xmlschema.BindYellow;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

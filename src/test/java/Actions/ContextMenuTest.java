@@ -3,12 +3,13 @@ package Actions;
 import base.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.ContextMenuPage;
 
 public class ContextMenuTest extends BaseTests {
 
     @Test
     public void rightClickTest(){
-        var menu= homePage.clickContextMenu();
+        ContextMenuPage menu= homePage.clickContextMenu();
         menu.rightClick();
         String currentResult = menu.getPopUpText();
         //menu.acceptPopUp();
