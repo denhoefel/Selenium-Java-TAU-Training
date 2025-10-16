@@ -25,7 +25,7 @@ public class BaseTests {
         driver.manage().window().maximize();
 
         // Navega para a Home e instancia o Page Object
-        driver.get("https://seu-site-ou-app-under-test.com");
+        driver.get("https://the-internet.herokuapp.com");
         homePage = new HomePage(driver);
     }
 

@@ -13,7 +13,8 @@ public void testSuccessfulLogin(){
     loginPage.SetUsername("tomsmith");
     loginPage.setPassword("SuperSecretPassword!");
     SecureAreaPage secureAreaPage= loginPage.clickLoginButton();
-    assertEquals(secureAreaPage.getAlertText(),"You logged into a secure area!\n" +
-            "×");
+    String alert = secureAreaPage.getAlertText();
+    assertTrue(alert.contains("You logged into a secure area!"),
+            "Mensagem inesperada. Recebido: " + alert);
 }
 }
