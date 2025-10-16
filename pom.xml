@@ -62,9 +62,10 @@
         <!-- Selenium Support - Utilitários e funcionalidades adicionais -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>4.16.1</version>
+            <artifactId>selenium-java</artifactId>
+            <version>4.25.0</version>
         </dependency>
+
 
 
     </dependencies>
@@ -80,6 +81,16 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
